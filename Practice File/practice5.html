@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML form Tutorial</h2>
+    <form action="backend.php">
+        <label for="name"> Name </label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            E-mail: <input type="email" name="myE-mail">
+        </div>
+        <br>
+        <div>
+            Date :<input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus :<input type="number" name="Bonus">
+        </div>
+        <br>
+        <!-- label tag is also Useful -->
+        <label for="Eligibility"> Are You Eligible?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="Eligibility" checked>
+        </div>
+        <!-- In above container "checked" is used to check the Box Already  -->
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> FeMale <input type="radio" name="myGender"> Other <input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about Yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Tsl">Tesla</option>
+                <option value="Suk" selected> Suzuki</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </div>
+
+
+    </form>
+</body>
+ 
+</html>

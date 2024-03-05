@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASEEM'S Fitness</title>
+</head>
+<style>
+    /* CSS Resat  */
+    .header {
+        position: sticky;
+        top: 3px;
+    }
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('/images/gym3.jpg');
+        font-size: 30px;
+        
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 13px;
+        top: 20px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 40%;
+        margin: 50px auto;
+        padding: 20px 20px;
+    
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        right: 13px;
+        top: 50px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+        padding: 0px 20px;
+       
+    }
+
+    .navbar li {
+        display: inline-block;
+        
+        font-size: 40px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 40px;
+        font-family: cursive;
+        font-weight: 90%;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(216, 187, 23);
+
+    }
+
+    .left img {
+        width: 150px;
+        height: 130px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .btn {
+        font-size: 35px;
+        margin: 0px 12px;
+        padding: 20px 54px;
+        background-color: black;
+        color: white;
+        border: 4px solid rgb(107, 150, 130);
+        border-radius: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 7px solid white;
+        margin: 100px 2px;
+        padding: 93px 120px;
+        width: 30%;
+        border-radius: 100px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 534px;
+        padding: 36px 266px;
+        margin: 6px auto;
+        border: 2px solid black;
+        font-size: 40px;
+        font-family: cursive; 
+        border-radius: 20px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 86%;
+    margin: 65px;
+    padding: 17px 8px;
+    }
+
+    #gender{
+        display: block;
+        font-size: 50px;
+        margin: 33px auto;
+        font-family: sans-serif;
+    }
+    
+    
+</style>
+
+
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="/images/gym0.jpg" alt="">
+            <div>WASEEM Fitness Club</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">E-mail Us</button>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h1>Join the best gym of the City Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your CNIC">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone no./E-mail">
+            </div> 
+            <div id="gender">
+            Gender: Male <input type="radio" name="myGender"> FeMale <input type="radio" name="myGender"> Other <input type="radio" name="myGender">
+            </div>
+            
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

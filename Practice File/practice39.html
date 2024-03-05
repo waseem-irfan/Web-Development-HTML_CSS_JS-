@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+        }
+
+        .nbr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nbr">
+          <span>Home</span>
+          <span>About</span>
+          <span>Contact</span>
+          <span>Sevices</span>
+        </nav>
+        <section class="nbr">
+            <h2>Learn CSS in Urdu</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta atque numquam fugit quibusdam, minima, quis ratione deserunt, quia veritatis architecto odio nostrum. Sapiente inventore delectus magni velit quia iusto repellendus nesciunt? Dignissimos voluptatibus illo nostrum laudantium, earum deleniti, odio quibusdam error ipsam vel ab amet hic accusamus saepe reprehenderit voluptatem! Assumenda nisi praesentium enim nam. Autem dolorem consequatur aperiam totam magnam fugit impedit unde. Facere voluptatum nostrum temporibus? Pariatur, consequatur nihil! Exercitationem veritatis, rerum aut delectus possimus magni quae perferendis autem soluta pariatur excepturi, tenetur dolore. Rem corrupti inventore consequuntur vel in aliquam, nam fugiat adipisci debitis incidunt repellendus illo excepturi sunt vero fugit, quam rerum magni commodi laborum sit? Numquam atque voluptatum porro voluptate placeat accusamus, reprehenderit laudantium blanditiis sapiente possimus assumenda sint amet quae deserunt alias perferendis optio repudiandae animi veniam aliquid! Illo assumenda optio temporibus distinctio illum?</p>
+        </section>
+        <aside class="nbr">
+            <h1>Learn More</h1>
+        </aside>
+        <footer class="nbr">Copyright with @Waseem</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid red ; */
+            color: white;
+            font-size: bold;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 20px 20px;
+            padding: 20px 20px;
+            background-color: darkblue;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow:10px 15px  rgb(4, 70, 211); */
+            /* box-shadow:10px 15px  rgb(4, 70, 211); */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow:10px 15px 5px rgb(4, 70, 211); */
+            /* box-shadow:10px 15px 5px rgb(4, 70, 211); */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow:10px 15px 5px 10px rgb(4, 70, 211); */
+            /* box-shadow:-10px -15px 5px 10px rgb(4, 70, 211); */
+
+            /* alpha takes the responsiility of darkness of shadow ,,, in the below syntax 0.6 is alpha */
+            /* box-shadow:-10px -15px 5px 10px rgba(71, 66, 89, 0.6);*/
+
+            /* inside shadow syntax is given as */
+            /* box-shadow: inset 4px 6px greenyellow; */
+
+            /* Multiple shadows can be written as */
+            /* box-shadow: 3px 5px blanchedalmond , 3px 5px grey; */
+
+
+
+
+        }
+        .card h2{
+            /* almost  properties of box-shadow same  go with text-shadow  */
+            /* text-shadow:2px 2px rgb(171, 253, 18); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2> Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sed! Tempore nesciunt odit ipsa,
+                nisi aperiam reiciendis ut explicabo optio aliquam tenetur esse, voluptatum repudiandae distinctio
+                quidem voluptatibus, quia possimus eveniet mollitia iste quis consectetur? Esse maiores fugit amet a,
+                minus ea vitae eveniet vero commodi provident delectus officia laboriosam? Perspiciatis, voluptas atque.
+                Hic, quaerat.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2> Card2 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sed! Tempore nesciunt odit ipsa,
+                nisi aperiam reiciendis ut explicabo optio aliquam tenetur esse, voluptatum repudiandae distinctio
+                quidem voluptatibus, quia possimus eveniet mollitia iste quis consectetur? Esse maiores fugit amet a,
+                minus ea vitae eveniet vero commodi provident delectus officia laboriosam? Perspiciatis, voluptas atque.
+                Hic, quaerat.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2> Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sed! Tempore nesciunt odit ipsa,
+                nisi aperiam reiciendis ut explicabo optio aliquam tenetur esse, voluptatum repudiandae distinctio
+                quidem voluptatibus, quia possimus eveniet mollitia iste quis consectetur? Esse maiores fugit amet a,
+                minus ea vitae eveniet vero commodi provident delectus officia laboriosam? Perspiciatis, voluptas atque.
+                Hic, quaerat.</p>
+        </div>
+    </div>
+</body>
+
+</html>

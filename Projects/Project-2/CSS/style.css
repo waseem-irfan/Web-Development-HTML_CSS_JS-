@@ -1,0 +1,222 @@
+/* CSS resat  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variales */
+:root{
+    --navbar-height:56px;
+}
+
+/* Navigation Bar  */
+#navbar{
+     
+    font-weight: lighter;
+    font-family: 'Style Script', cursive;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: 100px;
+
+}
+/* Navigation Bar: logo & Image  */
+#logo{
+
+margin: 7px 24px;
+}
+#logo img{
+    margin: 13px 0px;
+    height: 70px;
+}
+/* Navigation Bar: List Styling*/
+#navbar{
+    position:sticky;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    /* position: sticky; */
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    scroll-behavior: smooth;
+    color: white;
+    display: block;
+    padding: 4px 17px;
+    border-radius: 22px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+
+}
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 655px;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    background-image: url('/images/bg1-img.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 990px;
+    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+#home h1{
+    font-family: 'Style Script', cursive;
+    color: black;
+    align-items: center;
+}
+#home p{
+    font-family: 'Style Script', cursive;
+    color: black;
+    align-items: center;
+    font-size: 1.5rem;
+}
+/* Services section */
+#services{
+    margin:10px 34px;
+    display: flex;
+}
+#services .box{
+    padding: 34px;
+    margin: 5px 40px;
+    border-radius: 33px;
+    background-color: rgb(240, 222, 225);
+    border: 4px solid brown;
+}
+#services .box img{
+    margin: auto;
+    display: block;
+    height: 140px;
+    width: 150px;
+}
+#services .box p{
+    font-family: 'Style Script', cursive;
+    
+}
+/* Clients Section */
+#client-section{
+    height: 350px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/Images/bg2-img.jpg');
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+    
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 140px;
+    /* padding: 50px 100px; */
+    margin: 40px;
+}
+#client-item{
+    padding: 50px;
+}
+/* Contact Section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('/Images/card4-img.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 35px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding-bottom: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Style Script', cursive;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+}
+  
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Style Script', cursive;
+    font-size: 2.9rem;
+    padding: 13px;
+}
+.h-secondary{
+    font-family: 'Style Script', cursive;
+    font-size: 2.1rem;
+    padding: 13px;
+}
+.btn{
+    padding: 7px 22px;
+    border: 2px solid black;
+    background-color: burlywood;
+    font-size: 1.5rem;
+    font-weight: 20px;
+    margin: 18px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}

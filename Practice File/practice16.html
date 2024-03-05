@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Universal selector */
+       * {
+             box-sizing:border-box;
+             margin: 0;
+             padding:0;
+        }
+        body{
+            background-color: rgba(158, 202, 37, 0.651);
+        }
+        .container{
+            background-color: rgb(48, 232, 238);
+            border:3px solid rgb(204, 20, 20);
+            /* we can set padding/margin from top , bottom ,left & write like this 
+            padding-top: 44px;
+            padding-bottom: 44px;
+            padding-left: 33px;*/
+            
+            /* You can use shortend in padding like the given example
+            padding: 32px 44px 59px 21px;  padding/margin: top right bottom left*/
+
+            padding:19px 32px; /*padding: y(top/bottom) x(left/right)*/
+            margin: 34px 24px;
+            border-radius: 323px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab accusantium aperiam! Nisi laborum, omnis, similique aliquam tenetur iure fuga labore sequi quas velit sed eius nesciunt illum. Modi, ipsam?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab accusantium aperiam! Nisi laborum, omnis, similique aliquam tenetur iure fuga labore sequi quas velit sed eius nesciunt illum. Modi, ipsam?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab accusantium aperiam! Nisi laborum, omnis, similique aliquam tenetur iure fuga labore sequi quas velit sed eius nesciunt illum. Modi, ipsam?</p>
+    </div>
+    
+</body>
+</html>

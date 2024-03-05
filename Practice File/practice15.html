@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height , Width , Borders & Background</title>
+    <style>
+        #firstpara {
+            color: burlywood;
+            background-color: blue;
+            height: 122px;
+            width: 444px;
+            border-width: 5px;
+            border-color: rgb(7, 6, 0);
+            border-style: solid;
+            border-radius: 13px;
+            /* You can write Border width , style & color in one line like the given example 
+            ------>  border : 4px solid green  */
+        }
+
+        #secondpara {
+            color: burlywood;
+            background-color: blue;
+            height: 122px;
+            width: 444px;
+            border-top: 4px solid green;
+            border-left: 4px solid rgb(181, 255, 9);
+            border-bottom: 4px solid rgb(132, 141, 143);
+            border-right: 4px solid rgb(207, 37, 150);
+            border-bottom-left-radius: 14px;
+            /*Similarly you can change the radius of any corner*/
+            border-top-left-radius: 30px;
+        }
+
+        #thirdpara {
+            height: 500px;
+            width: 666px;
+            border-width: 55px;
+            border-style: double;
+            background-image: url('https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__340.jpg');
+            background-repeat: no-repeat;/*you can repeat an image in X & Y direction*/
+            background-position: center center;
+            /* you can write the background position in the following ways :
+            background-position: 193px 33px;
+            background-position:center top;*/
+            /* Make other combinations & Practice them */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is Heading</h3>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit architecto provident ea
+        dicta voluptates? Ducimus necessitatibus accusantium a, maxime, eveniet tenetur dolore accusamus ratione at
+        minima delectus illo saepe.</p>
+
+    <h3>This is second Heading</h3>
+    <p id="secondpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quaerat odit repudiandae
+        cupiditate, quibusdam molestias eaque perspiciatis eligendi harum debitis sint ipsum dolorum recusandae facere
+        temporibus soluta quasi accusamus repellendus?</p>
+
+    <h3>This is third Heading</h3>
+    <p id="thirdpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quaerat odit repudiandae
+        cupiditate, quibusdam molestias eaque perspiciatis eligendi harum debitis sint ipsum dolorum recusandae facere
+        temporibus soluta quasi accusamus repellendus?</p>
+
+</body>
+
+</html>
